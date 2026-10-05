@@ -7,8 +7,8 @@ on:
     branches: [main]
 
 env:
-  IMAGE_API: ${{ secrets.DOCKERHUB_USERNAME }}/sysmetrics
-  IMAGE_AGENT: ${{ secrets.DOCKERHUB_USERNAME }}/sysmetrics-agent
+  IMAGE_API: anice495/sysmetrics
+  IMAGE_AGENT: anice495/sysmetrics-agent
 
 jobs:
   # ---------- 1. TESTS ----------
