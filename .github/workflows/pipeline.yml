@@ -30,7 +30,7 @@ jobs:
           pip install pytest httpx pytest-mock
 
       - name: Lancer les tests
-        run: pytest tests/ -v
+        run: pytest app/tests/ -v
         env:
           PYTHONPATH: .
 
