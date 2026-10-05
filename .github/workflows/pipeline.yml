@@ -49,7 +49,7 @@ jobs:
         run: docker build --target agent -t $IMAGE_AGENT:${{ github.sha }} .
 
       - name: Scan Trivy - API
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: ${{ env.IMAGE_API }}:${{ github.sha }}
           format: table
@@ -58,7 +58,7 @@ jobs:
           exit-code: "1"
 
       - name: Scan Trivy - Agent
-        uses: aquasecurity/trivy-action@0.28.0
+        uses: aquasecurity/trivy-action@v0.36.0
         with:
           image-ref: ${{ env.IMAGE_AGENT }}:${{ github.sha }}
           format: table
