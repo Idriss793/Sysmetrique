@@ -21,4 +21,4 @@ def test_receive_metrics():
         "agent": "system-metrics-agent",
         "event_type": "system_metrics",
         "data": {
-            "timestamp": "2026-08-27T12:00:00+
+            "timestamp": "2026-08-27T12:00:00",
